@@ -107,13 +107,13 @@ cuenta con una dirección IP 172.17.0.2 en otro adaptador virtual. En ese sentid
 del container web, debe ingresarse la IP del host anfitrión (192.168.130.130) seguida de un puerto mapeado.
 Desde un equipo 192.168.130.190, esto se ve en el monitoreo de los servicios.
 
-'evidencia 1'
+![Evidencia](https://github.com/MrNickOS/sd-exam3/blob/A00052208/sd-exam3-01.png)
 
-'evidencia 2'
+![Evidencia](https://github.com/MrNickOS/sd-exam3/blob/A00052208/sd-exam3-02.png)
 
 Y usando el puerto de cualquier contenedor web ("192.168.130.130:container_port"), este es el resultado:
 
-'evidencia 3'
+![Evidencia](https://github.com/MrNickOS/sd-exam3/blob/A00052208/sd-exam3-03.png)
 
 En Consul, también es posible escalar un servicio deseado a N contenedores. A pesar que este escalamiento es
 manual, el balanceador se actualiza automáticamente, gracias al consul-template que realiza un reload cuando
@@ -125,11 +125,17 @@ Para este caso, vamos a "levantar" 75 contenedores web, con el siguiente comando
 docker-compose scale web=75
 ```
 
-'evidencia 4'
+![Evidencia](https://github.com/MrNickOS/sd-exam3/blob/A00052208/sd-exam3-04.png)
 
-Si queremos tumbar N contenedores de los existentes, simplemente especificamos un número menor al ingresado
-en el comando previo, pues Docker COmpose y Consul Template se encargan de detener los contenedores.
+![Evidencia](https://github.com/MrNickOS/sd-exam3/blob/A00052208/sd-exam3-05.png)
+
+![Evidencia](https://github.com/MrNickOS/sd-exam3/blob/A00052208/sd-exam3-06.png)
+
+Si queremos "tumbar" N contenedores de los existentes, basta especificar un número menor al ingresado en
+el comando previo, pues Docker Compose y Consul Template se encargan de detener los contenedores.
 
 ```bash
 docker-compose scale web=15
 ```
+
+URL: https://github.com/MrNickOS/sd-exam3/tree/A00052208
