@@ -8,6 +8,7 @@ que resida en un contenedor, así como los servicios nuevos y descontinuados de 
 el ejercicio, el descubridor residirá en otro contenedor y utilizará la aplicación Consul.
 
 Se utilizaron los siguientes recursos:
+
   * Equipo anfitrión Ubuntu 16.04
   * Haproxy Load Balancer
   * Discovery Service Server (en un container)
