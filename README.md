@@ -126,3 +126,10 @@ docker-compose scale web=75
 ```
 
 'evidencia 4'
+
+Si queremos tumbar N contenedores de los existentes, simplemente especificamos un número menor al ingresado
+en el comando previo, pues Docker COmpose y Consul Template se encargan de detener los contenedores.
+
+```bash
+docker-compose scale web=15
+```
